@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn.trustpilot.net/brand-assets/1.6.0/favicons/favicon-16x16.png"
+        sizes="16x16">
+    <link rel="icon" type="image/png" href="https://cdn.trustpilot.net/brand-assets/1.6.0/favicons/favicon-32x32.png"
+        sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <title>Be Heard with Trustpilot, the worlds most powerful review platform</title>
+    <style>
+        * {
+            font-weight: 400;
+        }
+
+        body {
+            position: relative;
+            margin: 0;
+        }
+
+        header {
+            position: fixed;
+            margin-top: 5px;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(2, 42, 28);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 3;
+            margin-top: -8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo-icon {
+            width: 150px;
+            margin-left: 80px;
+            margin-top: 10px;
+        }
+
+        .header_list {
+            display: flex;
+            list-style-type: none;
+            margin-top: 35px;
+        }
+
+        .first_header_links {
+            text-decoration: none;
+            color: white;
+        }
+
+        .first_header_links:hover {
+            border-bottom: 3px solid white;
+        }
+
+        button:hover {
+            background-color: rgb(97, 97, 241);
+            cursor: pointer;
+        }
+
+        .space2 {
+            background-color: rgb(175, 175, 229);
+            padding: 15px;
+            border: none;
+            margin: -20px 100px 0px 30px;
+            border-radius: 30px;
+            width: 170px;
+            font-weight: 600;
+            color: #2e2e2e;
+        }
+
+
+        .second_header {
+            z-index: 3;
+            /* font-family:sans-serif; */
+            position: fixed;
+            font-size: 20px;
+            width: 100%;
+            margin-top: 91px;
+            display: flex;
+            height: 70px;
+            font-weight: 800;
+            align-items: center;
+            background-color: rgb(250, 234, 237);
+            padding: 15px 30px
+        }
+
+        .header_ul {
+            color: aliceblue;
+            margin: 10px;
+            display: flex;
+
+        }
+
+        .ul {
+
+            list-style-type: none;
+            display: flex;
+            margin: 20px;
+            align-items: center;
+
+        }
+
+        .li {
+            /* font-family: sans-serif; */
+            font-weight: 00;
+            cursor: pointer;
+            font-weight: 300;
+            color: rgb(75, 73, 73);
+            width: fit-content;
+            font-size: 20px;
+            margin: 0 5px;
+            margin-right: 40px;
+        }
+
+        .li:hover {
+            color: rgb(44, 43, 43);
+            height: 30px;
+            border-bottom: 5px solid black;
+        }
+
+        .input_header {
+            position: relative;
+            width: 220px;
+            padding: 6px 30px;
+            height: 50px;
+            font-size: 18px;
+            color:rgb(235, 235, 235);
+            /* background-color: black; */
+            border: 1px solid rgb(231, 231, 231);
+        }
+        .icon_search{
+            width: 50px;
+            z-index: 4;
+            position: absolute;
+            right: 130px;
+
+        }
+
+        .thecontainer {
+
+            font-family: 'Salsa', cursive;
+            z-index: 1;
+            width: 90%;
+            /* height: 400px; */
+            padding: 30px;
+            position: relative;
+        }
+
+        .main {
+            position: absolute;
+            top: 250px;
+            width: 500px;
+        }
+
+        .Featured {
+            font-size: 40px;
+            margin-bottom: 35px;
+            font-weight: bold;
+        }
+
+        .holiday {
+            font-weight: 900;
+            margin-top: 30px;
+            font-size: 50px;
+        }
+
+        .read {
+            font-size: 17px;
+            padding: 30px;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            background-color: rgb(56, 141, 252);
+        }
+
+        .aside {
+            position: absolute;
+            width: 700px;
+            height: 400px;
+            /* border: 1px solid black; */
+            right: 0px;
+            top: 300px;
+        }
+
+        .img1 {
+            width: 700px;
+            height: 400px;
+        }
+
+        .container2 {
+            padding: 20px;
+            width: 100%;
+            border-top: 1px solid rgb(216, 212, 212);
+            position: absolute;
+            top: 800px;
+        }
+
+        .container2_header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .seemore {
+            color: rgb(106, 106, 247);
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        .container_imag {
+            width: 100%;
+            display: flex;
+
+        }
+
+        .theimages {
+            margin: 4px;
+            width: 800px;
+            height: 500px;
+            /* border: 1px solid black;  */
+        }
+
+        .container3_header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .secondcontainerimages {
+            width: 97%;
+            border-top: 1px solid rgb(216, 212, 212);
+            margin-top: 100px;
+        }
+
+        .container_dives {
+            width: 100%;
+            display: flex;
+        }
+
+        .thirdcontainerimages {
+            margin-top: 100px;
+            width: 97%;
+            border-top: 1px solid rgb(216, 212, 212);
+
+        }
+
+        .container4header {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .fourthcontainer {
+            width: 97%;
+            margin-top: 100px;
+            border-top: 1px solid rgb(216, 212, 212);
+        }
+
+        .container4_header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        footer {
+            z-index: 100;
+            margin-left: -50px;
+            position: relative;
+            width: 1410px;
+            height: 800px;
+            background-color: rgb(2, 42, 28);
+            margin-top: -50px;
+
+        }
+
+        .container7 {
+            width: 100%;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(4, 300px);
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        .terms1 {
+            margin: 40px;
+        }
+
+        .footer-footer {
+            margin: 50px;
+
+        }
+
+        .terms {
+            width: 100px;
+            margin: 20px;
+            margin-top: 10px;
+        }
+
+        .content-footer {
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <i class="fa-solid fa phon"></i>
+    <header>
+        <div class="logo">
+            <img class="logo-icon" src="https://cdn.trustpilot.net/brand-assets/4.3.0/logo-white.svg">
+        </div>
+        <ul class="header_list">
+            <li><a class="first_header_links" href="./categories.html">Categorie</a></li>
+            <li style="margin:0px 30px;"> <a class="first_header_links" href="./blog.html">blog</a></li>
+            <li><a class="first_header_links" href="logins.html">Login</a></li>
+            <li><button class="space2">For businesses</button></li>
+        </ul>
+        <script defer="" nomodule=""
+            src="https://consumersite-assets.trustpilot.net/consumersite-home/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    </header>
+    <div class="second_header">
+        <h2>The Trispilot Blog</h2>
+        <div class="header_ul">
+            <ul class="ul">
+                <li class="li"><a style="color: #2e2e2e;" href=""> featured</a></li>
+                <li class="li"><a style="color: #2e2e2e;" href="#trends">trends in trust</a></li>
+                <li class="li"><a style="color: #2e2e2e;" href="#metter">reviews metter</a></li>
+                <li class="li"><a style="color: #2e2e2e;" href="#confidence">buy with confidence</a></li>
+                <li class="li"><a style="color: #2e2e2e;" href="#storie">truspilot storie</a></li>
+                <!-- <span>
+                    <svg style="position: absolute;color:red;z-index:50000" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 19 20">
+                        <path
+                            d="M12.572 13.106l-.016.016-.016.016a6 6 0 11.032-.032zm2.062.68A8.002 8.002 0 002.657 3.221 8 8 0 0013.22 15.2l4.286 4.286 1.414-1.414-4.286-4.286z">
+                        </path>
+                    </svg> -->
+                </span>
+                <svg viewBox="0 0 16 16" fill="black-color" class="icon_search" xmlns="http://www.w3.org/2000/svg" width="25px"
+                height="23px">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM6.75 2a4.75 4.75 0 1 0 2.987 8.444l3.91 3.91.707-.708-3.91-3.91A4.75 4.75 0 0 0 6.75 2Z">
+                </path>
+            </svg>
+                <input type="text" placeholder="search articel" class="input_header" style="position:relative">
+
+            </ul>
+        </div>
+    </div>
+    <div class="thecontainer">
+        <div class="main">
+            <h1 class="Featured">Featured</h1>
+            <p style="color: rgb(70, 69, 69);">December 3, 2023</p>
+            <h1 class="holiday">
+                Your complete holiday planning guide
+            </h1>
+            <button class="read">Read now</button>
+        </div>
+        <div class="aside">
+            <img class="img1"
+                src="https://images.ctfassets.net/b7g9mrbfayuu/7FAIJTe9Nsw39bXTywhRRh/ce0c67fea6459b0dc91b93b90deaa75c/BD-182_Holiday_assets_-_main_image.jpg?q=80&w=640&fm=webp"
+                alt="">
+        </div>
+
+        <div class="container2">
+            <div class="container2_header">
+                <h2 style="font-size: 36px;" id="trends">Trends in Trust</h2>
+                <a href="" class="seemore">
+                    See more articles</a>
+            </div>
+            <div class="container_imag">
+                <div class="theimages"><img style="width: 100%;height: 250px;"
+                        src="https://images.ctfassets.net/b7g9mrbfayuu/56GO5Nu3IuU3ND7nLsjnRh/5d747a07a6ccf5c0d51f9fa4597a8bdc/parcel-delivery-scams.jpg?q=80&w=256&fm=webp"
+                        alt="">
+                    <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">trending trust</a>
+                    <h3 style="font-size: 25px; width: 300px;">Parcel delivery scams to watch out for all year round
+                    </h3>
+                    <p style="color: rgb(150, 150, 150);">November 22, 2023</p>
+                </div>
+                <div class="theimages"><img style="width: 100%;height: 250px;"
+                        src="https://images.ctfassets.net/b7g9mrbfayuu/2K5FFmJQBOihEaUNb56x8z/fda7a4ac17f523bc48da5abe59a3cdb9/holiday-scams.jpg?q=80&w=256&fm=webp"
+                        alt="">
+                    <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">trends in trust</a>
+                    <h3 style="font-size: 25px; width: 300px;">
+                        Holiday hoaxes: How scammers take advantage of the holiday season
+                    </h3>
+                    <p style="color: rgb(150, 150, 150);">November 9, 2023</p>
+                </div>
+                <div class="theimages"><img style="width: 100%;height: 250px;"
+                        src="https://images.ctfassets.net/b7g9mrbfayuu/2aXvUSz0hftt0mGzrWrThH/67c281bbd495ae3273115597b493052e/TP_Industries_10.jpg?q=80&w=256&fm=webp"
+                        alt="">
+
+                    <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">trends in trust</a>
+
+                    <h3 style="font-size: 25px; width: 300px;">Gift card scams: What to look out for and how to avoid
+                        them</h3>
+                    <p style="color: rgb(150, 150, 150);"> October 31, 2023</p>
+
+                </div>
+                <div class="theimages"><img style="width: 340px;height: 250px;"
+                        src="https://images.ctfassets.net/b7g9mrbfayuu/3TlIv2LjgrFmDjLv65kg5C/7eb3016cf962466dcae1c8bd94ca4a48/money-lies-survey.jpg?q=80&w=256&fm=webp"
+                        alt="">
+                    <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">trends in trust</a>
+                    <h3 style="font-size: 25px; width: 300px;">Financial fibs: How truthful are we about money?</h3>
+                    <p style="color: rgb(150, 150, 150);"> October 17, 2023</p>
+
+                </div>
+            </div>
+
+
+            <!--teni 5at-->
+
+            <div class="secondcontainerimages">
+                <div class="container3_header">
+                    <h1 id="metter">Reviews Matter</h1>
+                    <a class="seemore" href="">See more articel</a>
+                </div>
+                <div class="container_dives">
+                    <div class="theimages">
+                        <img style="width: 340px;height: 250px;"
+                            src="https://images.ctfassets.net/b7g9mrbfayuu/4RRJYfytckcLWN7lTjGgCR/3d6c24709e436d6b516028a234f9050d/five-star-review-critical-analysis.jpg?q=80&w=256&fm=webp"
+                            alt="">
+                        <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">Reviews Matter</a>
+                        <h3 style="font-size: 25px; width: 300px;">A critical analysis of the five-star experience</h3>
+                        <p style="color: rgb(150, 150, 150);">September 11, 2023</p>
+
+
+                    </div>
+                    <div class="theimages">
+                        <img style="width: 340px;height: 250px;"
+                            src="https://images.ctfassets.net/b7g9mrbfayuu/OgdxfKnYQ0UVXW0YlqDM3/86853569652e06288a8f012d2520195c/why-leave-two-three-four-star-reviews.jpg?q=80&w=256&fm=webp"
+                            alt="">
+                        <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">Reviews Matter</a>
+                        <h3 style="font-size: 25px; width: 300px;">The case for leaving 2, 3, and 4-star reviews</h3>
+                        <p style="color: rgb(150, 150, 150);">September 3, 2023</p>
+
+                    </div>
+                    <div class="theimages">
+                        <img style="width: 340px; height: 250px;"
+                            src="https://images.ctfassets.net/b7g9mrbfayuu/6BKMsMGSSFzL6co40jRFex/e50d1fb32681fad95ae597f99a897e44/why-reviews-matter.jpg?q=80&w=256&fm=webp"
+                            alt="">
+                        <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">Reviews Matter</a>
+                        <h3 style="font-size: 25px; width: 300px;">How companies use your reviews to get better
+                        </h3>
+                        <p style="color: rgb(150, 150, 150);">August 31, 2023</p>
+                    </div>
+                    <div class="theimages">
+                        <img style="width: 100%;height: 250px;"
+                            src="https://images.ctfassets.net/b7g9mrbfayuu/5eq52H7ClGBXZPC8OT7ro6/c800b90cadd76dfe0a9581cdf6b03798/one-star-five-star-reviewer-names.jpg?q=80&w=256&fm=webp"
+                            alt="">
+                        <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">Reviews Matter</a>
+                        <h3 style="font-size: 25px; width: 300px;">Reviewers revealed: Who writes the most one-star and
+                            five-star reviews?
+                        </h3>
+                        <p style="color: rgb(150, 150, 150);"> August 29, 2023</p>
+                    </div>
+                </div>
+            </div>
+            <!--telit 5at-->
+            <div class="thirdcontainerimages">
+                <div class="container4header">
+                    <h2 id="confidence" style="font-size: 36px;">Buy With Confidence</h2>
+                    <a class="seemore" href="">see more article</a>
+                </div>
+                <div class="container_dives">
+                    <div class="theimages">
+                        <img style="width: 340px;height: 250px;;"
+                            src="https://images.ctfassets.net/b7g9mrbfayuu/7FAIJTe9Nsw39bXTywhRRh/ce0c67fea6459b0dc91b93b90deaa75c/BD-182_Holiday_assets_-_main_image.jpg?q=80&w=256&fm=webp"
+                            alt="">
+                        <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">Buy With Confidance</a>
+                        <h3 style="font-size: 25px; width: 300px;">Your complete holiday planning guide
+                        </h3>
+                        <p style="color: rgb(150, 150, 150);">December 3, 2023</p>
+                    </div>
+
+                    <div class="theimages">
+                        <img style="width: 340px;height: 250px;;"
+                            src="https://images.ctfassets.net/b7g9mrbfayuu/6FogZFiUOm6hbSqsOAiEg1/351dbeef1522bcb571b38c65e4b78be9/regifting.jpg?q=80&w=256&fm=webp"
+                            alt="">
+                        <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">Buy With Confidance</a>
+                        <h3 style="font-size: 25px; width: 300px;">Heres how to regift meaningfully
+                        </h3>
+                        <p style="color: rgb(150, 150, 150);">December 3, 2023</p>
+                    </div>
+                    <div class="theimages">
+                        <img style="width: 100%;height: 250px;;"
+                            src="https://images.ctfassets.net/b7g9mrbfayuu/3RaHGZcSEgtMV0l2OoYlfB/5d33a90177d93f8f97c45a4ece5674fc/save-while-holiday-shopping.jpg?q=80&w=256&fm=webp"
+                            alt="">
+                        <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">Buy With Confidance</a>
+                        <h3 style="font-size: 25px; width: 300px;">How to save while shopping for Christmas gifts
+                        </h3>
+                        <p style="color: rgb(150, 150, 150);"> December 3, 2023</p>
+                    </div>
+
+
+                    <div class="theimages">
+                        <img style="width: 100%;height: 250px;"
+                            src="https://images.ctfassets.net/b7g9mrbfayuu/2rVcMslIVAyDRD85vtbXtJ/6d82f6a28810c670752029e4c621eb9c/Tips_to_support_your_mental_wellbeing_throughout_the_holiday_season.jpg?q=80&w=256&fm=webp"
+                            alt="">
+                        <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">Buy With Confidance</a>
+                        <h3 style="font-size: 25px; width: 300px;">Tips to support your mental wellbeing throughout the
+                            holiday season
+                        </h3>
+                        <p style="color: rgb(150, 150, 150);">November 29, 2023</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--rabi3 5at-->
+
+
+            <div class="fourthcontainer">
+                <div class="container4_header">
+                    <h2 id="storie" style="font-size: 36px;">Trustpilot Stories</h2>
+                    <a class="seemore" href="">
+                        See more articles</a>
+                </div>
+                <div class="container_dives">
+                    <div class="theimages">
+                        <img style="width: 340px;height: 250px;"
+                            src="https://images.ctfassets.net/b7g9mrbfayuu/57oB6frIUckyQjG1nfzrvV/d36f3ed34935e4da4609d570d269f848/Trustpilot_Pride___Allies_Resources.jpg?q=80&w=256&fm=webp"
+                            alt="">
+                        <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">Trustpilot Stories</a>
+                        <h3 style="font-size: 25px; width: 300px;">Trustpilot Pride & Allies: Our recommended resources
+                        </h3>
+                        <p style="color: rgb(150, 150, 150);">August 11, 2022</p>
+                    </div>
+                    <div class="theimages">
+                        <img style="width: 340px;height: 250px;"
+                            src="https://images.ctfassets.net/b7g9mrbfayuu/4nE7ypuX9WSh8GEl7RRiHB/0b14655c1bbedf6e3c8dcc8f42f8ed50/Copenhagen_Pride_Official_Partner_Trustpilot.png?q=80&w=256&fm=webp"
+                            alt="">
+                        <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">Trustpilot Stories</a>
+                        <h3 style="font-size: 25px; width: 300px;">Trustpilot is sponsoring Pride Copenhagen 2022
+                            🏳️‍🌈🎉</h3>
+                        <p style="color: rgb(150, 150, 150);">July 14, 2022</p>
+                    </div>
+                    <div class="theimages">
+                        <img style="width: 340px;height: 250px;"
+                            src="https://images.ctfassets.net/b7g9mrbfayuu/4SvBlr1TbGlJ6QMYtbtNrH/2d10259a43fbee44ffca1d22a117bbe8/Wally_2.png?q=80&w=256&fm=webp"
+                            alt="">
+                        <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">Trustpilot Stories</a>
+                        <h3 style="font-size: 25px; width: 300px;">Meet the pets of Trustpilot: 2021 Edition</h3>
+                        <p style="color: rgb(150, 150, 150);">November 7, 2021</p>
+                    </div>
+                    <div class="theimages">
+                        <img style="width: 340px; height: 250px;;"
+                            src="https://images.ctfassets.net/b7g9mrbfayuu/4kCw85Ub4eyBaIQSHmHePp/f02274136af2be688bd4d03179552fa7/TP_Pride_Star.png?q=80&w=256&fm=webp"
+                            alt="">
+                        <a style="color: blue; margin-bottom: 20px; font-size: 20px;" href="">Trustpilot Stories</a>
+                        <h3 style="font-size: 25px; width: 300px;">Introducing Trustpilot Pride & Allies
+                        </h3>
+                        <p style="color: rgb(150, 150, 150);">August 19, 2021</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <h5 style="color: white; width: 170px;padding: 40px;"><img
+                        src="https://cdn.trustpilot.net/brand-assets/4.3.0/logo-white.svg">
+                </h5>
+                <div class="container7">
+
+                    <div class="content-footer"><strong><a href="#"
+                                style="color: rgb(48, 48, 87);font-size:20px ;">About</a></strong></div>
+                    <div class="content-footer"><strong><a href="#"
+                                style="color: rgb(48, 48, 87);font-size:20px ;">Community</a></strong></div>
+                    <div class="content-footer"><strong><a href="#"
+                                style="color: rgb(48, 48, 87);font-size:20px ;">Busines</a></strong></div>
+                    <div class="content-footer"><a href="#" style="color: rgb(48, 48, 87);font-size:20px ;">Folow us
+                            now</a>
+                    </div>
+                    <div class="content-footer"><a href="#">about us</a></div>
+                    <div class="content-footer"><a href="#">trust inreviews</a></div>
+                    <div class="content-footer"><a href="#">trust pilot busines</a></div>
+                    <div class="content-footer"><a href="#"><i class="fa-brands fa-square-facebook"></a></i></div>
+                    <div class="content-footer"><a href="#">jobs</a></div>
+                    <div class="content-footer"><a href="#">help center</a></div>
+                    <div class="content-footer"><a href="#">products</a></div>
+                    <div class="content-footer"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                    <div class="content-footer"><a href="#">contact</a></div>
+                    <div class="content-footer"><a href="#"> log in</a></div>
+                    <div class="content-footer"><a href="#"> plans & pricing</a></div>
+                    <div class="content-footer"><a href="#"> <i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="content-footer"><a href="#"> blog</a></div>
+                    <div class="content-footer"><a href="#"> sign up</a></div>
+                    <div class="content-footer"><a href="#"> busineses login</a></div>
+                    <div class="content-footer"><a href="#"> <i class="fa-brands fa-linkedin"></i></a></div>
+                    <div class="content-footer"><a href="#"> how trustpilot work</a></div>
+                    <div class="content-footer"><a href="#"> chrom ap</a></div>
+                    <div class="content-footer"><a href="#"> 23blog for busineses</a></div>
+                    <div class="content-footer"><a href="#"> <i class="fa-brands fa-youtube"></i></a></div>
+                    <div class="content-footer"><a href="#"> tranparency report</a></div>
+                    <div class="content-footer"><a href="#"> press</a></div>
+                    <div class="content-footer"><a href="#"> investor relation</a></div>
+                </div>
+                <div class="footer-footer">
+                    <a class="terms" href="#">legal</a>
+                    <a class="terms" href="#">privacy policy</a>
+                    <a class="terms" href="">terms & condition</a>
+                    <a class="terms" href="">guidelines for review</a>
+                    <a class="terms" href="">system status</a>
+                    <a class="terms" href="">cookie preferences</a>
+                    <a class="terms" href="">do not sell my info</a>
+                    <a class="terms1" href="">modern slavery statement</a>
+                    <p style="color: rgb(161, 161, 144); width: 300px;margin-top: 80px;">@2022 Truspilot,Inc.All rights
+                        resrved.</p>
+                </div>
+                <div style="color: rgb(161,161,144);position: absolute;right:200px;top: 255px;height: 200px;">Choose
+                    country</div>
+                <select
+                    style=" font-size: 17px;width: 200px;height:60px; padding: 10px;position: absolute;right:120px;top: 300px;">
+                    <option value="united states"><span class="amirican-flag"></span>united states</option>
+                    <option style="height: 50px;">danmark</option>
+                    <option value="">seshweiz</option>
+                    <option value="">deutschland</option>
+                </select>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

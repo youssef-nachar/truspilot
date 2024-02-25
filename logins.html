@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="googleidentityservice" type="text/css" media="all" rel="stylesheet" href="https://accounts.google.com/gsi/style">
+    
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.trustpilot.net/brand-assets/4.3.0/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.trustpilot.net/brand-assets/4.3.0/favicons/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+  <title>Trustpilot Login</title>
+  <style>
+    *{
+   font-family: 'Salsa', cursive;
+
+    }
+    body{
+      background-color: #f1f1e8;
+    }
+  .header{
+      margin-top:-10px; 
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+  }
+    header{
+    /*\ position: fixed;  */
+   margin-top: 0px;
+   /* z-index: 1000; */
+    width: 100%; 
+   height: 90px;
+   background-color: #202020;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+}
+.logo-icon{
+   width: 150px;
+   margin: 0px 80px;
+}
+ul{
+   display: flex;
+   list-style-type: none;
+   margin-top: 20px;
+}
+.header-links{
+   text-decoration: none;
+   color: white;
+}
+.header-links:hover{
+   border-bottom: 3px solid white;
+}
+.space2{
+   background-color: rgb(175, 175, 229);
+   padding: 15px;
+   border: none;
+   margin: -20px 100px 0px 30px;
+   border-radius: 30px;
+   width: 170px;
+   font-weight: 600;
+   color: #2e2e2e;
+}
+.login{
+  position: relative;
+  text-align: center;
+ 
+}
+.container-log{
+  text-align: center;
+  position: absolute ;
+top: 100px;   
+font-size: 18px;
+/* text-align: center; */
+/* left: 50%; */
+}
+h1{
+  font-weight: 700;
+  width:900px;
+ margin-left: 278px; 
+}
+.log-in{
+  margin: auto;
+  width: 600px;
+  height: 350px;
+  border: 1px solid #f1f1e8;
+  position: relative;
+  position: absolute;
+  top: 200px;
+  right: 29%; 
+  border-radius:10px;
+  background-color: #fff;
+  text-align: center;
+}
+h2{
+display: flex;
+justify-content: center;
+}
+.container-btn{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 320px
+}
+.google-btn{
+  font-family: "Google Sans",arial,sans-serif;
+  background-color: #fff;
+  margin-bottom: 16px;
+   padding: 16px;
+  border: 1px solid #e0e0d8;
+  /* display: flex; */
+  align-items: center;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.facebook-btn{
+
+  background-color: rgb(91, 91, 247);
+  color: white;
+  font-size: 15px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border: none;
+  font-weight: 700;
+
+  border-radius: 30px;
+}
+::-webkit-scrollbar{
+  width: 0;
+}
+.apple-btn{
+  font-size: 15px;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  margin-bottom: 17px;
+  padding: 16px;
+  border: none;
+  border-radius: 30px;
+}
+button:hover{
+cursor: pointer;
+}
+.email-link{
+  font-size: 20px;
+  color: rgb(39, 39, 252);
+}
+.email-link:hover{
+  text-decoration: none;
+}
+.google-icon{
+  display: flex;
+  margin: 10px;
+  width: 20px;
+  position: absolute;
+  left: 150px;
+  top: 79px;
+
+}
+.apple-icon{
+  position: absolute;
+  left: 163px;
+  top: 219px;
+}
+.footerlogin{
+  margin-top:100px ;  
+}
+p{
+  margin-top: -20px;
+  color: rgb(99, 97, 97);
+}
+.log-btn{
+  background-color: rgb(54, 54, 253);
+  color: white;
+  border: none;
+  margin-right: 20px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.sign-btn{
+  background-color: rgb(244, 244, 248);
+  color:blue;
+  border:1px solid blue;
+  margin-right: 20px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.sign-btn:hover{
+  background-color: rgb(173, 173, 245);
+}
+.log-btn:hover{
+  background-color: rgb(173, 173, 245);
+
+}
+footer{
+   width:100%;
+   height: 650px;
+   background-color: black;
+   margin-top:px;
+   position: absolute;
+   bottom: -800px;
+  
+}
+.container7{
+   width: 80%;
+   text-decoration: none;
+   color: white;
+   display: grid;
+   grid-template-columns: repeat(4,300px);
+   margin-top: 20px;
+   position: relative;
+   margin-left: 30px;
+}
+.terms1{
+    margin: 20px; 
+}
+
+.footer-footer{
+   margin: 40px;
+
+}
+.terms{
+   width: 100px;
+   margin: 20px;
+   margin-top: 10px;
+   text-decoration: none;
+   color: #fff;
+}
+.content-footer{
+   margin: 15px; 
+   color: bisque;
+   text-decoration: none;
+}
+
+.icon_search{
+  position: absolute;
+  left: 325px;
+  margin: 3px 10px;
+  top: 37px;
+  z-index: 10000;
+}
+  </style>
+</head>
+<body>
+  <i class="fa-solid fa phon"></i>
+  <div class="header">
+  <header>
+      <div class="logo">
+          <img class="logo-icon" src="https://cdn.trustpilot.net/brand-assets/4.3.0/logo-white.svg">
+          <svg viewBox="0 0 16 16" class="icon_search" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM6.75 2a4.75 4.75 0 1 0 2.987 8.444l3.91 3.91.707-.708-3.91-3.91A4.75 4.75 0 0 0 6.75 2Z"></path></svg>
+          <input type="text" placeholder="Search for a company or a categorie" style="border-radius:7px;position: relative;position: absolute;top: 20px;  width: 550px;padding: 16px 40px 16px 48px;
+          font-size: 18px;">
+          
+      </div>
+      
+      <ul>
+          <li><a href="./categories.html" class="header-links">Categorie</a></li>
+          <li style="margin:0px 30px;"> <a href="./blog.html" class="header-links">blog</a></li>
+          <li><a href="logins.html" class="header-links">Login</a></li>
+          <li><button class="space2">For businesses</button></li>
+      </ul>
+  </header>
+  </div>
+  <div class="login">
+<div class="container-log">
+  <h1>Read reviews. Write reviews. Find companies.</h1>
+</div>
+</div>
+<div class="log-in">
+  <h2>Log in or sign up below</h2>
+  <div class="container-btn">
+  <button class="google-btn"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="google-icon"><g><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path><path fill="none" d="M0 0h48v48H0z"></path></g></svg>Continue with google</button>
+  <button class="facebook-btn"> <i class="fa-brands fa-facebook"></i>Continue with facebook</button>
+  <button class="apple-btn" ><svg xmlns="http://www.w3.org/2000/svg" class="apple-icon" height="40px" width="19px" viewBox="9 0 21 44"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path fill="#fff" fill-rule="nonzero" d="M19.8196726,13.1384615 C20.902953,13.1384615 22.2608678,12.406103 23.0695137,11.4296249 C23.8018722,10.5446917 24.3358837,9.30883662 24.3358837,8.07298156 C24.3358837,7.9051494 24.3206262,7.73731723 24.2901113,7.6 C23.0847711,7.64577241 21.6353115,8.4086459 20.7656357,9.43089638 C20.0790496,10.2090273 19.4534933,11.4296249 19.4534933,12.6807374 C19.4534933,12.8638271 19.4840083,13.0469167 19.4992657,13.1079466 C19.5755531,13.1232041 19.6976128,13.1384615 19.8196726,13.1384615 Z M16.0053051,31.6 C17.4852797,31.6 18.1413509,30.6082645 19.9875048,30.6082645 C21.8641736,30.6082645 22.2761252,31.5694851 23.923932,31.5694851 C25.5412238,31.5694851 26.6245041,30.074253 27.6467546,28.6095359 C28.7910648,26.9312142 29.2640464,25.2834075 29.2945613,25.2071202 C29.1877591,25.1766052 26.0904927,23.9102352 26.0904927,20.3552448 C26.0904927,17.2732359 28.5316879,15.8848061 28.6690051,15.7780038 C27.0517133,13.4588684 24.5952606,13.3978385 23.923932,13.3978385 C22.1082931,13.3978385 20.6283185,14.4963764 19.6976128,14.4963764 C18.6906198,14.4963764 17.36322,13.4588684 15.7917006,13.4588684 C12.8012365,13.4588684 9.765,15.9305785 9.765,20.5993643 C9.765,23.4982835 10.8940528,26.565035 12.2824825,28.548506 C13.4725652,30.2268277 14.5100731,31.6 16.0053051,31.6 Z"></path></g></svg></svg>Sign in with apple</button>
+  <a href="#" class="email-link">Continue with email</a>
+</div> 
+
+ <div class="footerlogin">
+  <h2 style="font-size: 45px;">Are you a business?</h2>
+  <p>Set up your business account on Trustpilot for free</p>
+  <button class="log-btn">Log in</button><button class="sign-btn">Sign up</button>
+ </div>
+</div>
+
+
+
+<footer>
+  <h5 style="color: white; width: 170px;padding: 40px;"><img src="https://cdn.trustpilot.net/brand-assets/4.3.0/logo-white.svg">
+  </h5>
+ <div class="container7">
+      <div class="content-footer"><strong><a href="#" style="color: rgb(48, 48, 87);font-size:20px ; text-decoration: none;">About</a></strong></div>
+      <div class="content-footer"><strong><a href="#" style="color: rgb(48, 48, 87);font-size:20px ;  text-decoration: none;">Community</a></strong></div>
+      <div class="content-footer"><strong><a href="#" style="color: rgb(48, 48, 87);font-size:20px ; text-decoration: none;">Busines</a></strong></div>
+      <div class="content-footer"><a href="#" style="color: rgb(48, 48, 87);font-size:20px ; text-decoration: none;">Folow us now</a></div>
+      <div class="content-footer"><a href="#" style="color: white;text-decoration: none;">about us</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;">trust inreviews</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;">trust pilot busines</a></div>
+      <div class="content-footer"><a href="#"><i class="fa-brands fa-square-facebook"></a></i></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;">jobs</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;">help center</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;">products</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"><i class="fa-brands fa-twitter"></i></a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;">contact</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> log in</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> plans & pricing</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> <i class="fa-brands fa-instagram"></i></a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> blog</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> sign up</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> busineses login</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> <i class="fa-brands fa-linkedin"></i></a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> how trustpilot work</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> chrom ap</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> 23blog for busineses</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> <i class="fa-brands fa-youtube"></i></a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> tranparency report</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> press</a></div>
+      <div class="content-footer"><a href="#"  style="color: white;text-decoration: none;"> investor relation</a></div>
+  </div>
+  <div class="footer-footer">
+      <a  class="terms"href="#">legal</a>
+      <a class="terms" href="#">privacy policy</a>
+      <a class="terms" href="">terms & condition</a>
+      <a  class="terms"href="">guidelines for review</a>
+      <a  class="terms"href="">system status</a>
+      <a  class="terms"href="">cookie preferences</a>
+      <a class="terms" href="">do not sell my info</a>
+      <a class="terms" href="">modern slavery statement</a>
+      <p style="color: rgb(161, 161, 144); width: 300px;margin-top: 20px;">@2022 Truspilot,Inc.All rights resrved.</p>
+  </div>
+  <div style="color: rgb(161,161,144);position: absolute;right:200px;top: 190px;height: 200px;">Choose country</div>
+  <select style=" font-size: 17px;width: 200px;height:50px; padding: 10px;position: absolute;right:120px;top:250px;" >
+      <option value="united states"><span class="amirican-flag"></span>united states</option>
+      <option style="height: 50px;">danmark</option>
+      <option value="">seshweiz</option>
+      <option value="">deutschland</option>
+  </select>
+</footer>
+</body>
+</html>
